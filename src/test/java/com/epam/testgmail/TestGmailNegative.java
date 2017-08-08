@@ -21,7 +21,7 @@ import testlistener.MyListener;
 
 public class TestGmailNegative{
 	
-	@DataProvider(parallel = true)
+	@DataProvider(parallel = false)
 	public Object[] getData() throws Exception {
 		DataXL usersData = new DataXL();
 		Object[] data = usersData.getUsersObj().toArray();
