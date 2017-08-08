@@ -24,7 +24,7 @@ import org.testng.annotations.AfterTest;
 
 public class TestGmail {
 
-	@DataProvider(parallel = false)
+	@DataProvider(parallel = true)
 	public Object[] getData() throws Exception {
 		DataXL usersData = new DataXL();
 		Object[] data = usersData.getUsersObj().toArray();
