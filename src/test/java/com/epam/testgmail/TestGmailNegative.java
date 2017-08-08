@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.uncommons.reportng.HTMLReporter;
+
 
 import bussinessobj.HomePageBO;
 import bussinessobj.LoginBO;
@@ -18,7 +20,7 @@ import testdata.Data;
 import testdata.DataXL;
 import testlistener.MyListener;
 
-
+@Listeners({MyListener.class, HTMLReporter.class})
 public class TestGmailNegative{
 	
 	@DataProvider(parallel = true)
