@@ -16,12 +16,14 @@ import org.testng.annotations.Listeners;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
+import org.uncommons.reportng.HTMLReporter;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
+@Listeners({MyListener.class, HTMLReporter.class})
 public class TestGmail {
 
 	@DataProvider(parallel = true)
