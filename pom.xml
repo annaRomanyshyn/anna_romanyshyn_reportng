@@ -77,10 +77,6 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					
-                          <systemPropertyVariables>
-                           <log4j.configuration>log4j.properties</log4j.configuration>
-                          </systemPropertyVariables>
-   
 				</configuration>
 			</plugin>
 		</plugins>
